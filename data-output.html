@@ -1,0 +1,14 @@
+<html>
+ 
+<body style="margin: 0;"><div id="data"></div></body>
+<script>
+ function receiveMessage(event) {
+   const message = JSON.parse(event.data)
+ 
+   document.getElementById('data').innerText = event.data;
+ }
+ 
+ window.addEventListener('message', receiveMessage);
+</script>
+ 
+</html>
