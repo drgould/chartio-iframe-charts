@@ -1,9 +1,10 @@
 <html>
  
-<body style="margin: 0;"><div id="data"></div></body>
+<body style="margin: 0;"><div id="data">something</div></body>
 <script>
  function receiveMessage(event) {
    const message = JSON.parse(event.data)
+   console.log(message);
  
    document.getElementById('data').innerText = event.data;
  }
